@@ -1,4 +1,5 @@
 ﻿using System;
+using Advent;
 
 namespace Advent;
 public class Starter{
@@ -18,6 +19,7 @@ public class Starter{
         }else{
             Console.Clear();
             Console.WriteLine($"Running day {input}!");
+            Day1.Day();
             await GetInputAsync();
         }
         
