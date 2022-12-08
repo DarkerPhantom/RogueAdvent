@@ -3,14 +3,22 @@
 namespace Advent;
 public class Starter{
     public static async Task Main(){
-        Console.WriteLine("Which day should be run?");
-        int input = int.Parse(await GetInputAsync());
 
+        
+        Console.Clear();
+        Console.WriteLine("Which day should be run?");
+
+        int input = int.Parse(await GetInputAsync());
+        
+        
+        
         if(input==0){
             Console.Clear();
             await Main();
         }else{
-            
+            Console.Clear();
+            Console.WriteLine($"Running day {input}!");
+            await GetInputAsync();
         }
         
     }
