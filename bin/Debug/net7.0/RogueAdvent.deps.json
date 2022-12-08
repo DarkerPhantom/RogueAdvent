@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "RogueAdvent/1.0.0": {
+        "runtime": {
+          "RogueAdvent.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "RogueAdvent/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

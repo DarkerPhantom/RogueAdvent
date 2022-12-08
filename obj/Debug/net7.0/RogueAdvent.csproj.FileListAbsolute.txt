@@ -1,0 +1,15 @@
+/workspaces/RogueAdvent/bin/Debug/net7.0/RogueAdvent
+/workspaces/RogueAdvent/bin/Debug/net7.0/RogueAdvent.deps.json
+/workspaces/RogueAdvent/bin/Debug/net7.0/RogueAdvent.runtimeconfig.json
+/workspaces/RogueAdvent/bin/Debug/net7.0/RogueAdvent.dll
+/workspaces/RogueAdvent/bin/Debug/net7.0/RogueAdvent.pdb
+/workspaces/RogueAdvent/obj/Debug/net7.0/RogueAdvent.csproj.AssemblyReference.cache
+/workspaces/RogueAdvent/obj/Debug/net7.0/RogueAdvent.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/RogueAdvent/obj/Debug/net7.0/RogueAdvent.AssemblyInfoInputs.cache
+/workspaces/RogueAdvent/obj/Debug/net7.0/RogueAdvent.AssemblyInfo.cs
+/workspaces/RogueAdvent/obj/Debug/net7.0/RogueAdvent.csproj.CoreCompileInputs.cache
+/workspaces/RogueAdvent/obj/Debug/net7.0/RogueAdvent.dll
+/workspaces/RogueAdvent/obj/Debug/net7.0/refint/RogueAdvent.dll
+/workspaces/RogueAdvent/obj/Debug/net7.0/RogueAdvent.pdb
+/workspaces/RogueAdvent/obj/Debug/net7.0/RogueAdvent.genruntimeconfig.cache
+/workspaces/RogueAdvent/obj/Debug/net7.0/ref/RogueAdvent.dll
