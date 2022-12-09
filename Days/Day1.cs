@@ -1,5 +1,3 @@
-using System.IO;
-
 namespace Advent.Days;
 public partial class Days{
     
