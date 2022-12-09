@@ -44,7 +44,7 @@ public partial class Days{
         int maxval = 0;
         int finval = 0;
 
-        Console.WriteLine(input.GetLength(0));
+        //Console.WriteLine(input.GetLength(0));
 
         for(int i = 0; i<input.GetLength(0); i++){
             if(input[i] == ""){
@@ -57,9 +57,35 @@ public partial class Days{
             int.TryParse(input[i],out int val);
             finval += val;
         }
-        
-        Console.WriteLine($"Maximum calories: {maxval}");
+        //68292
+        Console.WriteLine($"Maximum calories: {maxval} kcal");
+        Day1Part2(input);
 
+    }
+
+    private void Day1Part2(string[] input){
+        int[] topthree = {0,0,0};
+        int eachelf = 0;
+
+        foreach(string inp in input){
+            if(inp == ""){
+                if(topthree[0] <= eachelf){
+                    topthree[2] = topthree[1];
+                    topthree[1] = topthree[0];
+                    topthree[0] = eachelf;
+                }else if(topthree[1] <= eachelf){
+                    topthree[2] = topthree[1];
+                    topthree[1] = eachelf;
+                }else if(topthree[2] <= eachelf){
+                    topthree[2] = eachelf;
+                }
+                eachelf = 0;
+            }
+            int.TryParse(inp, out int snack);
+            eachelf += snack;
+        }
+        //203203
+        Console.WriteLine("Calories of the top three elves: " + (topthree[0] + topthree[1] + topthree[2]) + " kcal");
     }
     
 }

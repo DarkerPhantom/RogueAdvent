@@ -3,6 +3,10 @@ namespace Advent.Days;
 public partial class Days{
     private async void Day2(){
 
+        Console.Clear();
+        Console.WriteLine("Day 2 Started!");
+        Console.WriteLine("Getting the file...");
+
         string[] input = await System.IO.File.ReadAllLinesAsync(@"/workspaces/RogueAdvent/Resources/Day2.txt");
         int score = 0;
 
@@ -42,27 +46,31 @@ public partial class Days{
             {"A", 1}, //Rock
             {"B", 2}, //Paper
             {"C", 3}, //Scissors 
-            {"X", 1}, //Lose
-            {"Y", 2}, //Tie
-            {"Z", 3}  //Win
+            {"X", 0}, //Lose
+            {"Y", 3}, //Tie
+            {"Z", 6}  //Win
         };
+
         int score = 0;
 
         foreach(string inp in input){
             string[] game = inp.Split(" ");
 
-            score += ((plays[game[1]] - 1) * 3);
+            score += plays[game[1]];
 
-            if(plays[game[1]] == 3){
+            if(plays[game[1]] == 6){//If I want to win
                 score += (plays[game[0]] + 1) == 4 ? 1 : (plays[game[0]] + 1);
-                //score += (plays[game[0]]);
-            }if(plays[game[1]] == 2){
+                //Console.Write($"{(plays[game[0]] + 1) == 4} ");
+            }else if(plays[game[1]] == 3){//If I want to tie
                 score += plays[game[0]];
-            }else{
+                //Console.Write(plays[game[0]]);
+            }else{//If I want to lose
                 score += (plays[game[0]] - 1) == 0 ? 3 : (plays[game[0]] - 1);
+                //Console.Write((plays[game[0]] - 1) == 0 ? 3 : (plays[game[0]] - 1));
             }
+            //Console.WriteLine(game[0] + " " + game[1] + " = " + score);
         }
-        //10761 is too high!
-        Console.WriteLine("The score for Part 2 is {0}!", score);
+        //9975
+        Console.WriteLine("Your score for Part 2 is {0}!", score);
     }
 }
