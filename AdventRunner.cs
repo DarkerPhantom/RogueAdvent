@@ -1,17 +1,14 @@
 ﻿using System;
-using Advent;
+using Advent.Days;
 
 namespace Advent;
 public class Starter{
     public static async Task Main(){
-
         
         Console.Clear();
         Console.WriteLine("Which day should be run?");
 
         int input = int.Parse(await GetInputAsync());
-        
-        
         
         if(input==0){
             Console.Clear();
@@ -19,7 +16,7 @@ public class Starter{
         }else{
             Console.Clear();
             Console.WriteLine($"Running day {input}!");
-            Day1.Day();
+            Days.Days.Day(input);
             await GetInputAsync();
         }
         
@@ -35,4 +32,8 @@ public class Starter{
         }
            
     }
+}
+
+public interface IDay{
+    void Day();
 }

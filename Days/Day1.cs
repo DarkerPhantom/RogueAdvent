@@ -1,9 +1,41 @@
 using System.IO;
 
-namespace Advent;
+namespace Advent.Days;
+public partial class Days{
+    
+    public static void Day(int inp){
+        Days days = new Days();
+        /*
+        var Dict = new Dictionary<int,Days>(){
+            {1, new Days{}}
+        };*/
+        
+        switch(inp){
+            case 1:
+                days.Day1();
+            break;
+            case 2:
+                days.Day2();
+            break;
+            case 3:
+                days.Day3();
+            break;
+            case 4:
+                days.Day4();
+            break;
+            case 5:
+                days.Day5();
+            break;
+            case 6:
+                days.Day6();
+            break;
+            case 7:
+                days.Day7();
+            break;
+        }
 
-public class Day1{
-    public static async void Day(){
+    }
+    private async void Day1(){
 
         Console.Clear();
         Console.WriteLine("Day 1 Started!");
