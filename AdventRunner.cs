@@ -18,6 +18,7 @@ public class Starter{
             Console.WriteLine($"Running day {input}!");
             Days.Days.Day(input);
             await GetInputAsync();
+            await Main();
         }
         
     }
