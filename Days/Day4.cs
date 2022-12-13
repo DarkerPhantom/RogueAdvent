@@ -49,6 +49,6 @@ public partial class Days{
             }
 
         }
-        Console.WriteLine($"The number of groups that overlap each other is: {numbers}"); //833
+        Console.WriteLine($"The number of groups that overlap each other is: {numbers}."); //833
     }
 }
